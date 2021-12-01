@@ -9,6 +9,8 @@ export class CountriesService {
   constructor( private http: HttpClient) { }
 
   getCountries() {
-    return this.http.get<any>(`https://restcountries.com/v3.1/all`);
+    // return this.http.get<any>(`https://restcountries.com/v3.1/all`);
+    return this.http.get<any>(`https://backend-countries.herokuapp.com/weatherforecast`);
+
   }
 }
